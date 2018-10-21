@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="@string/unit_name"
+            android:textColor="@color/text_black_bg_color_setting"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/celc_setting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/feran_setting"
+            android:gravity="center"
+            android:text="@string/temp_unit_c"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/feran_setting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/temp_unit_f"
+            android:textSize="@dimen/_18ssp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_white_bg_color_setting" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="@string/distance_speed_name"
+            android:textColor="@color/text_black_bg_color_setting"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/kilometers_setting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/miles_setting"
+            android:background="@drawable/black_circle"
+            android:gravity="center"
+            android:text="@string/speed_unit_km"
+            android:textColor="@color/text_black_bg_color_setting"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/miles_setting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/grey_circle"
+            android:gravity="center"
+            android:text="@string/speed_unit_mi"
+            android:textColor="@color/text_white_bg_color_setting"
+            android:textSize="@dimen/_18ssp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_white_bg_color_setting" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="@string/pressure_text"
+            android:textColor="@color/text_black_bg_color_setting"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/millibar_setting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/inch_setting"
+            android:background="@drawable/grey_circle"
+            android:gravity="center"
+            android:text="@string/pressure_unit_mbb"
+            android:textColor="@color/text_white_bg_color_setting"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/inch_setting"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/black_circle"
+            android:gravity="center"
+            android:text="@string/pressure_unit_in"
+            android:textColor="@color/text_black_bg_color_setting"
+            android:textSize="@dimen/_18ssp" />
+    </RelativeLayout>
+    <TextView
+        android:textColor="@color/text_black_bg_color_setting"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/txtresetCityList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/reset_city_list"/>
+
+</LinearLayout>
